@@ -13,7 +13,7 @@ We will use the MNIST dataset as our train data.
 This figure shows the encoder part of the VAE model. It is a single layer LSTM (with default
 configurations e.g. activation is tanh) whose output connected to two dense layers for mean and log
 variance of latent space distribution. Images are treated as 28 dimensional 28 timestamp inputs.The
-dimensionality of the hidden states is 128. Latent space dimensionality is 50.
+dimensionality of the hidden states is 128. Latent space dimensionality is 50. To generate the input image, we define a custom resampling layer where a random vector is generated from the latent space  based on the mean and variance layers and Gaussian distribution, and then it is feeded into decoder.  
 
 **Decoder** :
 
