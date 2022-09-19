@@ -3,7 +3,7 @@
 ## 1. Handwritten Digit Generation with VAE
 
 ### Description: 
-In this assignment, we will implement a VAE, where the encoder is an LSTM network and the decoder is a convolutional network.
+In this project, we will implement a VAE, where the encoder is an LSTM network and the decoder is a convolutional network.
 We will use the MNIST dataset as our train data. 
 
 **Encoder:**
